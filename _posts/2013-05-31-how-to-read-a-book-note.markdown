@@ -10,7 +10,7 @@ categories:
 - 读书笔记
 ---
 
-[![how-to-read-a-book](http://liu-nan.com/wp-content/uploads/2013/05/how-to-read-a-book-216x300.jpg)](http://liu-nan.com/?attachment_id=142)
+![how-to-read-a-book](/images/how_to_read_a_book/how-to-read-a-book.jpg)
 
 作为一本1940年第一版，1972年第二版，至今还在印刷出售的书，其影响力可见一斑。
 
@@ -154,4 +154,4 @@ categories:
 
 由于加班和时间碎片化影响，花了一周时间才读完这本书，整理笔记以便将来查阅。
 
-[![how-to-read-a-book-mindmap](http://liu-nan.com/wp-content/uploads/2013/05/how-to-read-a-book-mindmap.jpg)](http://liu-nan.com/?attachment_id=143)
+![how-to-read-a-book-mindmap](/images/how_to_read_a_book/how-to-read-a-book-mindmap.jpg)

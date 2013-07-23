@@ -10,7 +10,7 @@ categories:
 - 读书笔记
 ---
 
-[![](http://liu-nan.com/wp-content/uploads/2012/08/making_it_big-300x300.jpg)](http://liu-nan.com/wp-content/uploads/2012/08/making_it_big.jpeg)
+![making_it_big](/images/making_it_big/making_it_big.jpeg)
 
 这是一本讲述IT从业人员职业发展的书，虽然作者声称该书适合各年龄各阶层的IT人员，不过总的来说还是一本针对新手的职业引导读物。和市场上诸多此类书籍一样，该书介绍了从新人简历的撰写，到职业技能的培养，再到个人职业发展直至自己创业的一系列内容。该书的亮点在于包含了对许多业界大牛的访谈记录，其中包括Bjarne Stroustrup（C++发明者）、James Gosling（Java发明者）、Richard Stallman（开源界大牛， GNU创始人）、Linus Torvalds（Linux之父）等耳熟能详的名字。访谈内容主要包括牛人们职业生涯开始的故事、对IT行业的贡献、各自成功的秘诀、生活与工作的平衡等内容，通过这些使刚入行的新手了解牛人是如何成为牛人的。
 

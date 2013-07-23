@@ -39,26 +39,14 @@ categories:
 
 
 
-[![factorymethod](http://liu-nan.com/wp-content/uploads/2013/06/factorymethod.png)](http://liu-nan.com/?attachment_id=169)
-
-
-
-
-
-
-
-
-
+![factorymethod](/images/designpatten_creational/factorymethod.png)
 
 抽象工厂：
 
 
 
 
-[![abstractfactory](http://liu-nan.com/wp-content/uploads/2013/06/abstractfactory.png)](http://liu-nan.com/?attachment_id=170)
-
-
-
+![abstractfactory](/images/designpatten_creational/abstractfactory.png)
 
 
 
@@ -84,10 +72,7 @@ categories:
 
 
 
-[![builder](http://liu-nan.com/wp-content/uploads/2013/06/builder.png)](http://liu-nan.com/?attachment_id=171)
-
-
-
+![builder](/images/designpatten_creational/builder.png)
 
 
 
@@ -100,8 +85,7 @@ categories:
 
 
 
-[![prototype](http://liu-nan.com/wp-content/uploads/2013/06/prototype.png)](http://liu-nan.com/?attachment_id=172)
-
+![prototype](/images/designpatten_creational/prototype.png)
 
 
 

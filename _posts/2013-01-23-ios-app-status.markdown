@@ -37,9 +37,7 @@ categories:
 图1显示了一个iOS程序的状态转换。（注:iOS4.0以前没有后台运行和挂起状态，home键之后进程将被终止。另外，某些设备即使在4.0之后也没有这两种状态）
 
 
-[![app_status](http://liu-nan.com/wp-content/uploads/2013/01/app_status.jpeg)](http://liu-nan.com/?attachment_id=125)
-
-
+![app_status](/images/ios_app_status/app_status.jpeg)
 
 
 图1 iOS程序状态转换

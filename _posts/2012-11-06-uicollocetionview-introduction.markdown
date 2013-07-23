@@ -189,8 +189,7 @@ decoration view：另一种supplementary view，装饰整个collection view，�
 
 附件中的例子展示了UICollectionView的使用：
 
-[![图1](http://liu-nan.com/wp-content/uploads/2012/11/collectionview11.jpeg)](http://liu-nan.com/?attachment_id=81)
-
+![图1](/images/collectionview/collectionview_1.jpg)
 
 图1
 
@@ -201,9 +200,7 @@ decoration view：另一种supplementary view，装饰整个collection view，�
 
 
 
-[![图2](http://liu-nan.com/wp-content/uploads/2012/11/collectionview21.jpeg)](http://liu-nan.com/?attachment_id=82)
-
-
+![图2](/images/collectionview/collectionview_2.jpg)
 图2
 
 
@@ -211,8 +208,7 @@ decoration view：另一种supplementary view，装饰整个collection view，�
 
 
 
-[![collectionview3](http://liu-nan.com/wp-content/uploads/2012/11/collectionview311.jpeg)](http://liu-nan.com/?attachment_id=84)
-
+![collectionview3](/images/collectionview/collectionview_3.jpg)
 
 图3
 
