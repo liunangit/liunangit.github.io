@@ -14,8 +14,7 @@ Singleton(单件)在iOS开发中被广泛使用。我们常用的NSNotificationC
 
 **最简单的Singleton:**
 
-    
-    static Singleton *s_single;
+	static Singleton *s_single;
     
     + (id)sharedSingle
     
@@ -30,7 +29,6 @@ Singleton(单件)在iOS开发中被广泛使用。我们常用的NSNotificationC
     return s_single;
     
     }
-
 
 很明显，上面这个方法没有考虑多线程。
 **多线程版的：**
