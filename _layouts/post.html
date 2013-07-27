@@ -1,5 +1,15 @@
 ---
 layout: default
 ---
-{% include JB/setup %}
-{% include themes/twitter/post.html %}
+<h2>{{ page.title }}</h2>
+<p class="meta">{{ page.date | date_to_string }}</p>
+
+<div id="post">
+{{ content }}
+</div>
+
+<footer>
+  <div>
+    <a href="http://liu-nan.com">liu-nan.com</a>
+  </div>
+</footer>

@@ -1,6 +1,33 @@
----
-theme :
-  name : twitter
----
-{% include JB/setup %}
-{% include themes/twitter/default.html %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>juan lasheras | {{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+        <div class="container">
+          <nav>
+            <div onclick="location.href='/';">liu-nan</div>
+            <ul>
+              <li>
+                <a href="http://www.liu-nan.com">liu-nan.com</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="site">
+            <div class="header"></div>
+                {{ content }}
+          </div> <!-- /container -->
+        </div>
+
+    </body>
+</html>

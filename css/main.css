@@ -1,0 +1,209 @@
+@import url(syntax.css);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #FFF;
+  font-size: small;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  nav { clear: both; }
+  nav > ul { display: none }
+  .site { margin: 1em; }
+  h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-size: 1em;
+  }
+}
+@media (min-width: 1024px) {
+  nav { float: left; }
+  nav > div { margin-left: 2em; }
+  nav > ul { margin: 1em 0 0 4em; }
+  .site {
+    margin: 3em auto 2em;
+    width: 42em;
+  }
+  h1 { font-size: 1.8em }
+  h2 { font-size: 1.7em }
+  h3, h4, h5, h6 { font-size: 1.4em; }
+}
+
+nav > div{
+  font-size: 2em;
+  padding: .5em 1em .5em 1em;
+  background-image: url("/images/green_dust_scratch.png");
+  color: #140;
+  cursor: pointer;
+}
+nav > ul { list-style-type: none; }
+
+h3 {
+  position: relative;
+  left: -1em;
+}
+h3:before {
+  content: url("../images/green_dust_scratch_16px.png");
+  position: relative;
+  left: -.2em;
+}
+
+h1 { margin-bottom: 1em; }
+p { margin: 1em 0; }
+
+a, a:visited {
+  color: #585;
+  text-decoration: none;
+}
+a:hover {
+  color: #5A5;
+  text-decoration: none;
+}
+
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+/*****************************************************************************/
+/*
+/* Home
+/*
+/*****************************************************************************/
+ul.posts {
+  list-style-type: none;
+  margin-bottom: 2em;
+}
+
+ul.posts li {
+  line-height: 1.75em;
+}
+
+ul.posts span {
+  color: #aaa;
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 80%;
+}
+
+/*****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+
+.site {
+  font-size: 115%;
+  text-align: justify;
+  line-height: 1.5em;
+}
+
+.site .header a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.site .header h1.title {
+  display: inline-block;
+  margin-bottom: 2em;
+}
+
+.site .header h1.title a {
+  color: #a00;
+}
+
+.site .header h1.title a:hover {
+  color: #000;
+}
+
+.site .header a.extra {
+  color: #aaa;
+  margin-left: 1em;
+}
+
+.site .header a.extra:hover {
+  color: #000;
+}
+
+.site .meta {
+  color: #aaa;
+}
+
+footer {
+  padding: 1em 0 1em 0;
+  text-align: center;
+  font-size: 80%;
+  color: #666;
+  border-top: 4px solid #eee;
+  margin-top: 2em;
+  overflow: hidden;
+}
+
+footer .contact {
+  float: left;
+  margin-right: 3em;
+}
+
+footer .contact a {
+  color: #8085C1;
+}
+
+img[alt="feed"] {
+  position: relative;
+  top: -.1em;
+}
+
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+
+/* standard */
+#post pre {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .4em;
+}
+
+#post ul, #post ol {
+  margin-left: 1.35em;
+}
+
+#post code {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .2em;
+}
+
+#post pre code {
+  border: none;
+}
+
+/* terminal */
+#post pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #FFF;
+}
+
+#post pre.terminal code {
+  background-color: #333;
+}
