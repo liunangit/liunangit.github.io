@@ -279,8 +279,8 @@ iOS7新增了一个Layout：UICollectionViewTransitionLayout，用来进行两�
 
 参考资料：
 
-[1] Collection View Programming Guide for iOS: [https://developer.apple.com/library/ios/#documentation/WindowsViews/Conceptual/CollectionViewPGforIOS/Introduction/Introduction.html](https://developer.apple.com/library/ios/#documentation/WindowsViews/Conceptual/CollectionViewPGforIOS/Introduction/Introduction.html)
+1.Collection View Programming Guide for iOS: [https://developer.apple.com/library/ios/#documentation/WindowsViews/Conceptual/CollectionViewPGforIOS/Introduction/Introduction.html](https://developer.apple.com/library/ios/#documentation/WindowsViews/Conceptual/CollectionViewPGforIOS/Introduction/Introduction.html)
 
-[2] UICollectionView Class Reference: [https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UICollectionView_class/Reference/Reference.html](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UICollectionView_class/Reference/Reference.html)
+2.UICollectionView Class Reference: [https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UICollectionView_class/Reference/Reference.html](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UICollectionView_class/Reference/Reference.html)
 
-[3] UICollectionViewLayout Class Reference: [https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UICollectionViewLayout_class/Reference/Reference.html](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UICollectionViewLayout_class/Reference/Reference.html)
+3.UICollectionViewLayout Class Reference: [https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UICollectionViewLayout_class/Reference/Reference.html](https://developer.apple.com/library/ios/#documentation/UIKit/Reference/UICollectionViewLayout_class/Reference/Reference.html)

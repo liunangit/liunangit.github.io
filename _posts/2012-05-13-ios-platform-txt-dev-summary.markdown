@@ -253,7 +253,7 @@ categories:
 
 
 
-由于要分页显示，因此必须确定每次读取的字符串刚好能填满一页，即字符串长度为n的时候不超出一页，为n+1的时候便超出一页，如何找到这个n。用NSString的方法sizeWithFont:constrainedToSize:lineBreakMode:[2]配合二分法能够较快的确定所需字符数。
+由于要分页显示，因此必须确定每次读取的字符串刚好能填满一页，即字符串长度为n的时候不超出一页，为n+1的时候便超出一页，如何找到这个n。用NSString的方法sizeWithFont:constrainedToSize:lineBreakMode:配合二分法能够较快的确定所需字符数。
 
 
 
