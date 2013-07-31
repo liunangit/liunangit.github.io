@@ -13,7 +13,7 @@ CGImageRef imageRef = defaultRepresentation.fullResolutionImage;
 如果一张图片被编辑过（iOS 7的系统自带滤镜，说的就是你！)，那么通过上述方法只能获取到原图。通过这个方法可以判断图片是否编辑过：
 
 <pre>
-- (BOOL)hasBeenEdited:(ALAsset *)asset
+(BOOL)hasBeenEdited:(ALAsset *)asset
 {
     return [asset.defaultRepresentation.metadata objectForKey:@"AdjustmentXMP"];
 }
@@ -30,7 +30,7 @@ GImageRef imageRef = defaultRepresentation.fullScreenImage;
 下面这段代码能够拿到原始尺寸且编辑过的图片：
 
 <pre>
-- (UIImage *)filterFullImage:(ALAssetRepresentation *)rep
+(UIImage *)filterFullImage:(ALAssetRepresentation *)rep
 {
     NSString *xmpString = rep.metadata[@"AdjustmentXMP"];
     NSData *xmpData = [xmpString dataUsingEncoding:NSUTF8StringEncoding];
