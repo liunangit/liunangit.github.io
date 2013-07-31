@@ -30,32 +30,10 @@ GImageRef imageRef = defaultRepresentation.fullScreenImage;
 
 下面这段代码能够拿到原始尺寸且编辑过的图片：
 
-<pre>
-- (UIImage *)filterFullImage:(ALAssetRepresentation *)rep
-{
-    NSString *xmpString = rep.metadata[@"AdjustmentXMP"];
-    NSData *xmpData = [xmpString dataUsingEncoding:NSUTF8StringEncoding];
-    CIImage *image = [CIImage imageWithCGImage:rep.fullResolutionImage];
-    
-    NSError *error = nil;
-    NSArray *filterArray = [CIFilter filterArrayFromSerializedXMP:xmpData
-                                                 inputImageExtent:image.extent
-                                                            error:&error];
-    if (error) {                                                
-        NSLog(@"Error during CIFilter creation: %@", [error localizedDescription]);
-        return nil;
-    }       
-        
-    CIContext *context = [CIContext contextWithOptions:nil];
-    for (CIFilter *filter in filterArray) {
-        [filter setValue:image forKey:kCIInputImageKey];
-        image = [filter outputImage];
-    }       
+![code](/images/filter-full-resolution/filter-full-resolution.jpg)
 
-    CGImageRef img = [context createCGImage:image fromRect:[image extent]];
-    UIImage *resultImage = [UIImage imageWithCGImage:img scale:1.0 orientation:(UIImageOrientation)rep];
-    CGImageRelease(img);
-    return resultImage;
-}
+是的，这个方法有一些耗时，它将原图用所选滤镜挨个处理了一遍。
 
-</pre>
+另外，这个方法支持iOS6以上系统。（iOS6以前也没有系统滤镜吧）
+
+总结：感谢万能的Stack Overflow。
