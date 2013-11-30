@@ -32,7 +32,7 @@ GImageRef imageRef = defaultRepresentation.fullScreenImage;
 
 ![code](/images/filter-full-resolution/filter-full-resolution.jpg)
 
-是的，这个方法有一些耗时，它将原图用所选滤镜挨个处理了一遍。
+注意：这个方法可能会非常耗时。在iPhone4上曾遇到过某些照片需要处理数分钟之久！因此请酌情处理一些屌丝机型！
 
 另外，这个方法支持iOS6以上系统。（iOS6以前也没有系统滤镜吧）
 
