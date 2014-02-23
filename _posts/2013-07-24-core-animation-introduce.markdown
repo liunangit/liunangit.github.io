@@ -8,8 +8,10 @@ category:   ios
 CALayer和CAAnimatin是核心动画中最重要的两个类。所有动画都是通过修改CALayer中的动画属性（Animatable Property）值来实现的；而CAAnimation提供了一些子类和方法用来修改这些动画属性。
 ![Core Animation](/images/core_animation/intro.jpeg)
 
-###Layer（CALayer)
-####Layer的几何属性
+####Layer（CALayer)
+
+**1.Layer的几何属性**
+
 * position:一个 CGPoint 的值,指定Layer相对于它父Layer的位置, 该基于父Layer的坐标系。
 
 * anchorPoint:一个CGPoint值,它指定了一个基于图层bounds的符合位置坐标系的位置。anchorPoint指定了bounds相对于position的值,同时也作为变换时候的支点。改变anchorPoint的值将影响其transform(变换矩阵)的作用效果，如图所示。
@@ -55,7 +57,9 @@ layer.transform = CATransform3DIdentity;
 </pre>
 
 <br />
-####CALayer的内容
+
+**2.CALayer的内容**
+
 一个CALayer的内容就是一块可见的位图数据，有三种方法可以设置layer的数据。
 
 * 将一个CGImageRef对象直接赋值给layer的contents属性。（适用于content内容很少改变的情况）
@@ -131,7 +135,8 @@ layer.transform = CATransform3DIdentity;
 ![contensGravity](/images/core_animation/contents_gravity.jpeg)
 
 <br />
-####CALayer的样式
+
+**3.CALayer的样式**
 
 * 背景和边框
 
@@ -185,8 +190,11 @@ self.layer.opacity = 0.5;
 	* QCCompositionLayer	配合Quartz Composer绘制界面(for OS X only)
 
 <br />
-###动画 (CAAnimation)
-####隐式动画
+
+####动画 (CAAnimation)
+
+**1.隐式动画**
+
 直接对Layer动画属性进行的所有赋值操作，默认都会触发动画效果，例如：
 
 <pre>
@@ -199,7 +207,7 @@ theLayer.position=CGPointMake(500.0,500.0);
 
 隐式动画的默认duration是0.25秒。使用CATransaction可以改变隐式动画的默认时间和时间函数，以及动画结束后的处理等属性。
 
-####显式动画
+**2.显式动画**
 
 Core Animation提供了一个显式的动画模型。该模型需要显示创建一个动画对象,并设置开始和结束的值。
 
@@ -335,7 +343,9 @@ Core Animation提供了一个显式的动画模型。该模型需要显示创建
 	</pre>
 
 <br />
-###CAMediaTiming
+
+####CAMediaTiming
+
 CAMediaTiming是一个带有层级关系的时间系统，建立了对象和其父对象的时间映射关系。CALayer和CAAnimation都遵循的协议，主要是一些和时间相关的属性和方法。
 
 * beginTime:标识动画相对于其父对象的起始时间。

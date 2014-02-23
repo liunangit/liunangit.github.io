@@ -6,9 +6,9 @@ layout: post
 title: Objective-C runtime初探
 ---
 
-<h2>Objective-c对象模型</h2>
+#### Objective-c对象模型
 
-<h3>NSObject</h3>
+**1.NSObject**
 
 平时我们用到的类几乎都是继承自NSObject，那么NSObject里到底有些什么呢？
 
@@ -39,7 +39,7 @@ NSObject结构中唯一的成员变量就是isa指针。再来看看Class结构�
 
 原来objc2把Class内的成员隐藏起来了，需要时通过newcls将Class强制转换为class_t使用。并且每一个类还记录了自己的子类和兄弟类，为objc的动态特性提供支持。
 
-### isa指针
+**2.isa指针**
 
 NSObject、Class、id等重要结构中，第一个成员都是isa指针，可见isa在runtime中扮演着比较重要的角色。那么isa具体指向什么呢？这里不得不先说一下原类（meta class）的概念。
 
@@ -59,7 +59,7 @@ NSObject、Class、id等重要结构中，第一个成员都是isa指针，可�
 ![isa](/images/objc-runtime/isa.jpg)
 
 
-## message
+#### 消息 
 在Objective-C中，所有的方法调用（[receiver message]）都会转换为objc_msgSend()实现。objc_msgSend是汇编实现的，具体干了什么？[这里](http://www.friday.com/bbum/2009/12/18/objc_msgsend-part-1-the-road-map/)有文章对该方法进行了分析并得出以下结论：
 
 ![objc_msgSend](/images/objc-runtime/msg_send.jpg)
@@ -69,16 +69,16 @@ NSObject、Class、id等重要结构中，第一个成员都是isa指针，可�
 ![objc_msgSend_c](/images/objc-runtime/msg_send_c.jpg)
 
 
-## runtime的应用
+#### runtime的应用
 
-### method swizzling
+**1.method swizzling**
 
 method swizzling用来改变某个已存在的方法的实现。
 如果我们想要将一个类的某个方法替换成自己的实现，可以在该类的category中实现同名方法将原来的方法覆盖掉；但是想要在我们实现的方法中调用原方法，就需要用到一些runtime api了。
 
 method swizzling本质上是通过系统方法method_exchangeImplementations交换两个方法的实现(IMP)达到目的的。关于method swizzling更多讨论请看[这里](http://blog.csdn.net/yiyaaixuexi/article/details/9374411)和[这里](http://esoftmobile.com/2014/02/19/method-swizzling/)
 
-### 关联对象（Associated Objects）
+**2.关联对象（Associated Objects）**
 
 关联对象的最大用处是为已存在的类添加属性。
 
