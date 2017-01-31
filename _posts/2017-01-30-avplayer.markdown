@@ -39,23 +39,34 @@ Qzone一直以来也是使用AVPlayer进行视频播放，加上http代理和自
 
 1.4 画面卡住  
 
+
 现象：有些视频出现播放几秒后卡住的问题（iOS & Mac), 检查mp4格式没有异常，但是Android和Windows可以正常播放。  
 	
 
 ##2. HLS  
 
-2.1 一直播放不起来
-原因：1）m3u8（直播）文件中的ts片不连续  2. 将automaticallyWaitsToMinimizeStalling设置为NO，抓包显示AVPlayer一直在请求同一片数据十多次。
+2.1 一直播放不起来 
 
-解决方法：保证ts片是连续的（dns解析到多个ip时，AVPlayer会随机向所有ip请求文件；不同ip返回的片可能不连续）；使用ip直出可以避免该问题。
+
+原因：1）m3u8（直播）文件中的ts片不连续  2. 将automaticallyWaitsToMinimizeStalling设置为NO，抓包显示AVPlayer一直在请求同一片数据十多次。  
+
+
+解决方法：保证ts片是连续的（dns解析到多个ip时，AVPlayer会随机向所有ip请求文件；不同ip返回的片可能不连续）；使用ip直出可以避免该问题。  
 	
-2.2 首次缓冲时间长 
+
+2.2 首次缓冲时间长  
+
 原因：调用了AVPlayer的setRate, 导致首片地址下载两次。
+
 		
-2.3 播放到一半卡住
-原因：中间某个ts片404了。
+2.3 播放到一半卡住  
+
+
+原因：中间某个ts片404了。  
 		
+
 2.4 网速对HLS的影响
+
 
 网速远大于码率：开始加载首片后立即开始播放（首次缓冲耗时0.5s左右）
 
